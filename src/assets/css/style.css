@@ -1,0 +1,202 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/* ========== Sider css  */
+
+.navbar {
+    width: 50px;
+    background-color: #fff;
+    height: 100vh; 
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 0 0 transparent;
+    border-right: 1px solid #ececf1;
+    z-index: 101;
+    margin-top: 6px;
+    transition: width 0.15s cubic-bezier(0, .57, .21, .99), box-shadow 0.15s cubic-bezier(0, .57, .21, .99);
+}
+
+
+.navbar:hover {
+    width: 170px;
+}
+
+.navbar:hover .menu-link-text {   
+    display: inline;
+    padding: 0;
+    margin-left: 0;
+}
+
+.menu-link-text {   
+    display: none;
+}
+
+.navbar-container {
+   margin-left: 15px;
+}
+
+.sidebar-icons{
+    margin-left: -31px;
+}
+
+.menu-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.menu-list .menu-item {    
+    width: 101%;
+    list-style: none;
+}
+
+.sub-menu {
+    margin: 2px 20px -7px -37px;
+}
+
+.menu-link{    
+    display: flex;
+    align-items: center;
+    gap: 0.7rem; 
+    font-weight: 500;
+    font-size: 15px;
+    text-decoration: none;
+    color: inherit;
+}
+
+.navbar-footer{
+    margin-top: 70px;
+}
+.navbar-footter-border{
+    border-top: 1px solid#ececf1;
+  
+}
+
+.container-lg, .container-md, .container-sm, .container {
+    max-width: 1450px;
+}
+
+
+
+
+
+/* ================ Playground components =============== */
+
+.playground-select-dropdown {
+    cursor: pointer;
+    min-height: 32px;
+    background-color: #ececf1;
+    border-radius: 20px;
+    padding: 3px;
+    border: 1px solid #ececf1;
+    margin-left: 8px;
+    outline: 0px !important;
+}
+
+
+/* ================ Assistants componenets ============== */
+
+
+.assistant-nav-header{
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28px;
+    padding: 12px 24px;  
+}
+
+.assistant-create-btn{
+    background-color: #10a37f;
+    color: #fff;
+    border: none;
+    font-size: 14px;
+    line-height: 20px;
+    padding: 6px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    line-height: 1.4;
+    transition: box-shadow .3s,background-color .3s,color .3s;
+}
+
+.assistans-nav-border{
+    border-bottom: 1px solid #ececf1;
+    margin-left: 32px;
+}
+
+.assistans-nav-conatiner{
+    margin-left: 55px;
+}
+
+.assistant-nav-content{
+    margin-top: 231px;
+}
+
+.assistant-icon{
+    background-color: rgb(247, 247, 248);
+    color: rgb(116, 116, 116);
+    padding: 8px;
+    border-radius: 8px;
+    width: 40px;
+    height: 40px;
+}
+
+.assistant-text{
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 4px;
+}
+
+/*============= Fine-Tunnig  ==============*/
+
+.assistant-learn-btn {
+    background-color: #ececf1;
+    color: #353740;
+    font-size: 14px;
+    line-height: 20px;
+    padding: 6px 12px;
+    border: none;
+    border-radius: 8px;
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+}
+
+/* ============ Modal clsoe icon ====== */
+
+.btn-close {
+    background:none !important;
+}
+
+
+
+
+
+/* =================  media query ============== */
+
+
+
+@media screen and (min-width: 1450px) {
+
+    /* ===== APi Keys === */
+    .card-width{
+        width: 58%;
+    }
+    .select-box-width{
+        width: 10% !important;
+    }
+
+    /* === setttings -oraginzation === */
+
+    .forms-input-width{
+        width: 28%;
+    }
+}
